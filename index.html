@@ -8,16 +8,62 @@
 </head>
 <body>
     <style>
+
+    *{
+        box-sizing: border-box;
+    }
+
         #nav-bar {
             position: fixed;
+
+        }
+
+        .nav-link {
+            text-decoration: none;
+            cursor: pointer;
+            color: black;
+        }
+
+        img {
+            width: 200px;
+/*             position: absolute;
+ */            right: 50%;
+            border: 5px solid black;
+            border-radius: 80%;
+            transform: translateX(200%);
+        
+        }
+
+       form{
+            display: flex;
+           
+        }
+    
+
+        @media screen and (max-width: 760px) {
+            #submit{
+                background-color : #333;
+                color: ivory;
+                border-radius: 5%;
+                font-size: 1.5rem;
+            }
+        }
+        @media screen and (min-width: 760px) {
+            #email{
+                background-color : #fff;
+                border-radius: 5%;
+                font-size: 1.2rem;
+            }
         }
     </style>
     <header id="header">
         <nav id="nav-bar">
-            <button href="#" class="nav-link"></button>
-            <button href="#" class="nav-link"></button>
-            <button href="#" class="nav-link"></button>
-    
+           <ul>
+               <li><a href="https://www.microverse.org/" class="nav-link">About</a></li>
+               <li><a href="#" class="nav-link">Contact</a></li>
+               <li><a href="#" class="nav-link">More Infos</a></li>
+           </ul>
+            
         </nav>
         <img id="header-img" src="./pexels-harry-cunningham-harrydigital-3619797.jpg" alt="Logo">
     </header>
